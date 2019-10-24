@@ -14,7 +14,6 @@ body{
         /*2*/"Segoe UI", "Microsoft JhengHei","Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
         /*3*/"Helvetica Neue",Arial, sans-serif;
 }
-
 .breadcrumb{
   background-color: #fff;
 }
@@ -84,8 +83,9 @@ a:hover,a:focus{
     background-color: rgba(255, 162, 0, 0.76)!important;
 }
 .bg-primary {
-    background-color: #0d7181!important;
+    background-color: #00000000!important;
     color: #fea;
+    text-shadow: #ffc107 1px 1px 1px;
 }
 .btn-primary {
     color: #fff;
