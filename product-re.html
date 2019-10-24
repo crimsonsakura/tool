@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/bootstrap-4.2.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="static/bootstrap-4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/fontawesome-free-5.9.0-web/css/fontawesome.min.css">  
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="/static/img/toolicon16.png">
+    <title>工具借借-搜尋結果</title>
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-info fixed-top">
+        <a class="navbar-brand mr-auto mt-2 mt-lg-0" href="index.html">
+            <img src="static/img/toolicon.png" width="30" height="30" alt="" class="mr-1 ml-1">
+            工具借借
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="form-inline my-2 my-lg-0" style="list-style:none;">
+                <li class="nav-item"><a href="news.html" class="dropdown-item" >公告&本站介紹</a></li>
+                <li class="nav-item">
+                    <a class="dropdown-item" href="personal.html">個人檔案</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 中央區 -->
+    <div class="container warp mt-7 mb-7">
+        <!-- 麵包屑 -->
+        <div aria-label="breadcrumb" class="mt-7">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">商品頁面</li>
+            </ol>
+        </div>
+        <div class="row drop-shadow">
+            <!-- 右方圖片 -->
+            <div class="col-md-6 mt-3">
+                <img src="static/img/img-1.jpg" alt="" class="img-thumbnail rounded mx-auto d-block">
+            </div>
+            <div class="col-md-6 mt-3" style="height: 300px;">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <!-- 頁籤1 -->
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="infomation" aria-selected="true">物品資訊
+                        </a>
+                    </li>
+                    <!-- 頁籤2 -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#QA" role="tab" aria-controls="QA"
+                            aria-selected="false">問與答
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="myTabContent">
+                    <!-- 頁籤1 內容 -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="infomation-tab">
+                        <table class="table">
+                            <caption>
+                                <h2>木製工具台</h2>
+                            </caption>
+                            <tr> 
+                                <th>可出借時間上限</th>
+                                
+                                <td><input type="text" name="" id="" placeholder="30天"></td>
+                            </tr>
+                            <tr>
+                                <th>目前狀態</th>
+                                <td><input type="text" name="" id="" placeholder="買來只用一次"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- 頁籤2 內容 -->
+                    <div class="tab-pane fade" id="QA" role="tabpanel" aria-labelledby="QA-tab">
+                        <p>王明美
+                            <footer class="blockquote-footer">於2015/10/10 A.M 12:00提問</footer>
+                        </p>
+                        <p>
+                            你好請問借到11天可以嗎?
+                        </p>
+                        <hr>
+                        <form action="" class="form-group mt-3">
+                            <label for="exampleFormControlTextarea1">輸入您的回答：</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1 mt-2" rows="6"></textarea>
+                            <div class="text-center">
+                                <button class="btn btn-outline-primary btn-primary drop-shadow mt-2">回答問題</button>
+                            </div>  
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-info fixed-bottom container-fluid">
+        <div class="text-center">
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item">服務條款</li>
+                <li class="list-inline-item">｜工具借借網站所有</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+    <script src="static/fontawesome-free-5.9.0-web/js/fontawesome.min.js"></script>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/bootstrap-4.2.1/js/bootstrap.min.js"></script>
+</html>

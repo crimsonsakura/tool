@@ -11,174 +11,225 @@
     <link rel="Shortcut Icon" type="image/x-icon" href="/static/img/toolicon16.png">
     <title>工具借借-搜尋結果</title>
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <a class="navbar-brand mr-auto mt-2 mt-lg-0" href="index.html">
-                    <img src="static/img/toolicon.png" width="30" height="30" alt="" class="mr-1">
-                    工具借借
-                </a>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-info fixed-top">
+        <a class="navbar-brand mr-auto mt-2 mt-lg-0" href="index.html">
+            <img src="static/img/toolicon.png" width="30" height="30" alt="" class="mr-1 ml-1">
+            工具借借
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
             </ul>
-            <img src="static/img/pictuer.jpg" width="30" height="30" class="rounded" alt="">
-                <ul class="navbar-nav bg-info">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
+            <ul class="form-inline my-2 my-lg-0" style="list-style:none;">
+                <li class="nav-item"><a class="dropdown-item" href="news.html">公告&本站介紹</a></li>
+                <li class="nav-item">
+                    <a class="dropdown-item" href="personal.html">個人檔案</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="container warp mt-5">
+    <!-- 中央區 -->
+    <div class="warp mt-7 container">
+        <!-- 麵包屑 -->
+        <div aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">搜尋結果</li>
+            </ol>
+        </div>
+        <!-- 搜尋列 -->
         <div class="row">
-            <div class="btn-group pt-5 col-md-12" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary" onclick="location.href='index.html'">index</button>
-                <button type="button" class="btn btn-secondary" onclick="location.href='product.html'">product</button>
-                <button type="button" class="btn btn-secondary" onclick="location.href='product-1.html'">product-1</button>
-                <button type="button" class="btn btn-secondary" onclick="location.href='product-2.html'">product-2</button>
-                <button type="button" class="btn btn-secondary" onclick="location.href='product-3.html'">product-3</button>
-            </div>
-            <div class="input-group mt-5 col-md-12">
-                <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div role="separator" class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
+            <div class="col-md-12">
+                <div class="input-group mt-2">
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button shadow"
+                        placeholder="請輸入關鍵字">
+                    <div class="input-group-append">
+                        <select class="form-control">
+                            <option>木工工具</option>
+                            <option value="">車床工具</option>
+                            <option value="">網路工程工具</option>
+                            <option value="">製圖工具</option>
+                        </select> 
+                    </div> 
+                    <a class="btn btn-outline-primary btn-primary shadow" type="submit" href="product.html">搜尋</a>
                 </div>
             </div>
-            <div class="card-deck mt-5 col-md-12">
-                <div class="card">
-                    <a href="#" class="prborder border-primary rounded">
-                        <img src="static/img/technics1.jpg" class="card-img-top" alt="...">
+        </div>
+        <!-- 商品卡片區 -->
+        <div class="row mb-7">
+            <div class="card-deck mt-5 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 container drop-shadow" style="
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            ">
+                <div class="card drop-shadow">
+                    <a href="product-1.html" class="prborder border-info rounded">
+                        <img src="static/img/img-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">木製工具台</h5>
+                            <!-- <table>
+                                <tr>
+                                    <th>目前狀態</th>
+                                </tr>
+                                <tr>
+                                    <td>已使用5年，略有斑駁</td>
+                                </tr>
+                            </table> -->
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#" class="prborder border-danger rounded">
-                        <img src="static/img/technics1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#" class="prborder border-warning rounded">
-                        <img src="static/img/technics1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#" class="prborder border-success rounded">
-                        <img src="static/img/technics1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted">可出借時間上限：30天</small>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="card-deck mt-5 col-md-12">
-                <div class="card">
-                    <a href="#" class="prborder border-primary rounded">
-                        <img src="static/img/technics1.jpg" class="card-img-top" alt="...">
+            <div class="card-deck mt-5 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 container drop-shadow" style="
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        ">
+                <div class="card drop-shadow">
+                    <a href="product-1.html" class="prborder border-info rounded">
+                        <img src="static/img/img-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">STAT線</h5>
+                            <!-- <table>
+                                <tr>
+                                    <th>目前狀態</th>
+                                </tr>
+                                <tr>
+                                    <td>買來只用一次</td>
+                                </tr>
+                            </table> -->
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted">可出借時間上限：10天</small>
                         </div>
                     </a>
                 </div>
-                <div class="card">
-                    <a href="#" class="prborder border-danger rounded">
-                        <img src="static/img/technics1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-deck mt-5 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 container drop-shadow" style="
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        ">
+                <div class="card drop-shadow">
+                    <a href="product-1.html" class="prborder border-info rounded">
+                        <img src="static/img/img-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">雕刻刀</h5>
+                            <!-- <table>
+                                <tr>
+                                    <th>目前狀態</th>
+                                </tr>
+                                <tr>
+                                    <td>使用多時，因老花眼無法繼續使用</td>
+                                </tr>
+                            </table> -->
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted">可出借時間上限：20天</small>
                         </div>
                     </a>
                 </div>
-                <div class="card">
-                    <a href="#" class="prborder border-warning rounded">
-                        <img src="static/img/technics1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-deck mt-5 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 container drop-shadow" style="
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        ">
+                <div class="card drop-shadow">
+                    <a href="product-1.html" class="prborder border-info rounded">
+                        <img src="static/img/img-4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">電動鑽頭</h5>
+                            <!-- <table>
+                                <tr>
+                                    <th>目前狀態</th>
+                                </tr>
+                                <tr>
+                                    <td>只用一次，老公心血來潮想DIY，但只用一次</td>
+                                </tr>
+                            </table> -->
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted">可出借時間上限：30天</small>
                         </div>
                     </a>
                 </div>
-                <div class="card">
-                    <a href="#" class="prborder border-success rounded">
-                        <img src="static/img/technics1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-deck mt-5 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 container drop-shadow" style="
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        ">
+                <div class="card drop-shadow">
+                    <a href="product-1.html" class="prborder border-info rounded">
+                        <img src="static/img/img-5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">氣動工具</h5>
+                            <!-- <table>
+                                <tr>
+                                    <th>目前狀態</th>
+                                </tr>
+                                <tr>
+                                    <td>看youtube，所以就買了，但都沒用</td>
+                                </tr>
+                            </table> -->
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted">可出借時間上限：30天</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-deck mt-5 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 container drop-shadow" style="
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        ">
+                <div class="card drop-shadow">
+                    <a href="product-1.html" class="prborder border-info rounded">
+                        <img src="static/img/img-7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CNC工具</h5>
+                            <!-- <table>
+                                <tr>
+                                    <th>目前狀態</th>
+                                </tr>
+                                <tr>
+                                    <td>工廠收了，剩餘機器賣不掉<br></td>
+                                </tr>
+                            </table> -->
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">可出借時間上限：50天</small>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="bg-info mt-5">
-        <div class="container">        
-            <div class="row">
-                <div class="col-md-4">
-                    <ul class="list-unstyled">
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Deleniti, rerum! Accusamus.</li>
-                        <li>Dolorum, reprehenderit harum.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-unstyled">
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Molestiae, omnis iure?</li>
-                        <li>Ipsam, sit dolores!</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-unstyled">
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Voluptatibus, doloribus quam!</li>
-                        <li>Impedit, sunt ducimus.</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- footer -->
+    <footer class="bg-info fixed-bottom container-fluid">
+        <div class="text-center">
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item">服務條款</li>
+                <li class="list-inline-item">｜工具借借網站所有</li>   
+            </ul>
         </div>
-
     </footer>
 </body>
     <script src="static/fontawesome-free-5.9.0-web/js/fontawesome.min.js"></script>

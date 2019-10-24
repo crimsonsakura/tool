@@ -11,100 +11,138 @@
     <link rel="Shortcut Icon" type="image/x-icon" href="/static/img/toolicon16.png">
     <title>工具借借-搜尋結果</title>
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <a class="navbar-brand mr-auto mt-2 mt-lg-0" href="index.html">
-                    <img src="static/img/toolicon.png" width="30" height="30" alt="" class="mr-1">
-                    工具借借
-                </a>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-info fixed-top">
+        <a class="navbar-brand mr-auto mt-2 mt-lg-0" href="index.html">
+            <img src="static/img/toolicon.png" width="30" height="30" alt="" class="mr-1 ml-1">
+            工具借借
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
             </ul>
-            <img src="static/img/pictuer.jpg" width="30" height="30" class="rounded" alt="">
-                <ul class="navbar-nav bg-info">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
+            <ul class="form-inline my-2 my-lg-0" style="list-style:none;">
+                <li class="nav-item"><a href="news.html" class="dropdown-item" >公告&本站介紹</a></li>
+                <li class="nav-item">
+                    <a class="dropdown-item" href="personal.html">個人檔案</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="container warp mt-5">
-        <div class="row">
-            <div class="btn-group pt-5 col-md-12" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary" onclick="location.href='index.html'">index</button>
-                <button type="button" class="btn btn-secondary" onclick="location.href='product.html'">product</button>
-                <button type="button" class="btn btn-secondary" onclick="location.href='product-1.html'">product-1</button>
-                <button type="button" class="btn btn-secondary" onclick="location.href='product-2.html'">product-2</button>
-                <button type="button" class="btn btn-secondary" onclick="location.href='product-3.html'">product-3</button>
-            </div>
+    <!-- 中央區 -->
+    <div class="container warp mt-7 mb-7">
+        <!-- 麵包屑 -->
+        <div aria-label="breadcrumb" class="mt-7">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">商品頁面</li>
+            </ol>
+        </div>
+        <div class="row drop-shadow">
+            <!-- 右方圖片 -->
             <div class="col-md-6 mt-3">
-                <img src="static/img/technics500.jpg" alt="" class="img-thumbnail rounded mx-auto d-block">
+                <img src="static/img/img-1.jpg" alt="" class="img-thumbnail rounded mx-auto d-block">
             </div>
-            <div class="col-md-6 mt-3">
+            <!-- 左方內容 -->
+            <div class="col-md-6 mt-3" style="height: 300px;">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <!-- 頁籤1 -->
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                            aria-controls="infomation" aria-selected="true">物品資訊</a>
+                            aria-controls="infomation" aria-selected="true">物品資訊
+                        </a>
                     </li>
+                    <!-- 頁籤2 -->
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="QA"
-                            aria-selected="false">問與答</a>
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#QA" role="tab" aria-controls="QA"
+                            aria-selected="false">問與答
+                        </a>
                     </li>
+                    <!-- 頁籤3 -->
                     <li class="nav-item">
                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="order"
-                            aria-selected="false">下單</a>
+                            aria-selected="false">我要借！
+                        </a>
                     </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
+                
+                <div class="tab-content mb-7" id="myTabContent">
+                    <!-- 頁籤1 內容 -->
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="infomation-tab">
-                        <h2>Lorem, ipsum.</h2>
-                        <ul>
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Reiciendis, tempore mollitia!</li>
-                            <li>Veritatis, magnam rerum!</li>
-                        </ul>
+                        <table class="table">
+                            <caption>
+                                <h2>木製工具台</h2>
+                            </caption>
+                            <tr> 
+                                <th>可出借時間上限</th>
+                                <td>30天</td>
+                            </tr>
+                            <tr>
+                                <th>目前狀態</th>
+                                <td>買來只用一次</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="QA-tab">
+                    <!-- 頁籤2 內容 -->
+                    <div class="tab-pane fade" id="QA" role="tabpanel" aria-labelledby="QA-tab">
+                        <p>王明美
+                            <footer class="blockquote-footer">於2015/10/10 A.M 12:00提問</footer>
+                        </p>
+                        <p>
+                            你好請問借到11天可以嗎?
+                        </p>
+                        <hr>
+                        <form action="" class="form-group mt-3">
+                            <label for="exampleFormControlTextarea1">輸入您想詢問的問題：</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1 mt-2" rows="6"></textarea>
+                            <div class="text-center">
+                                <button class="btn btn-outline-primary btn-primary drop-shadow mt-2">送出問題</button>
+                            </div>  
+                        </form>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="order-tab"></div>
+                    <!-- 頁籤3 內容 -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="order-tab">
+                        <h3>請確認您想借的物品為：</h3>
+                        <table class="table">
+                            <caption>
+                                <h3>木製工具台</h3>
+                            </caption>
+                            <tr>
+                                <th>想借的時間為</th>
+                                <td>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>目前狀態</th>
+                                <td>買來只用一次</td>
+                            </tr>
+                        </table>
+                        <div class="text-center">
+                            <a class="btn btn-outline-primary btn-primary drop-shadow mt-2" href="success.html">確認送出</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="bg-info mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <ul class="list-unstyled">
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Deleniti, rerum! Accusamus.</li>
-                        <li>Dolorum, reprehenderit harum.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-unstyled">
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Molestiae, omnis iure?</li>
-                        <li>Ipsam, sit dolores!</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-unstyled">
-                        <li>Lorem, ipsum dolor.</li>
-                        <li>Voluptatibus, doloribus quam!</li>
-                        <li>Impedit, sunt ducimus.</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- footer -->
+    <footer class="bg-info fixed-bottom container-fluid">
+        <div class="text-center">
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item">服務條款</li>
+                <li class="list-inline-item">｜工具借借網站所有</li>
+            </ul>
         </div>
-
     </footer>
 </body>
     <script src="static/fontawesome-free-5.9.0-web/js/fontawesome.min.js"></script>
