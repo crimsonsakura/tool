@@ -38,27 +38,48 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="box drop-shadow p-3 pb-5 mb-5 mt-9 bg-Secondary rounded col-md-5 col-sm-12">
-                <form class=" pt-3 pr-3 pl-3">
-                    <div class="form-group drop-shadow">
-                        <label for="exampleInputEmail1">帳號：
-                        </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="請輸入您的email">
-                        <small id="emailHelp" class="form-text text-muted"></small>
-                    </div>
-                    <div class="form-group drop-shadow">
-                        <label for="exampleInputPassword1">密碼：</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入您的密碼">
-                    </div>
-                    <br>
-                    <div class="text-center">
-                        <a class="btn btn-primary mx-auto  drop-shadow" href="success.html">登入</a>
-                    </div>
-                        
-                </form>
+        <div class="row align-items-center mt-9 justify-content-sm-center">
+            <div class="input-group ">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button shadow" placeholder="請輸入關鍵字">
+                <a class="btn btn-outline-primary btn-primary shadow" type="submit" href="#">搜尋</a>
             </div>
+        <div class="row align-items-center mt-5 mx-auto justify-content-center">
+            <form action="" method="post">
+                <table class="rwd-table table-hover table table-striped table-bordered table-sm">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>編號：</th>
+                            <th>信箱：</th>
+                            <th>姓名：</th>
+                            <th>暱稱：</th>
+                            <th>電話：</th>
+                            <th>地址：</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="編號：">123123123</td>
+                            <td data-th="信箱：">aaabbcc@gmail.com</td>
+                            <td data-th="姓名：">王曉明</td>
+                            <td data-th="暱稱：">大名</td>
+                            <td data-th="電話：">0912345678</td>
+                            <td data-th="地址：">台南市新營區新進路二段90號</td>
+                            <td data-th="">
+                                <button class="btn btn-secondary">
+                                    修改
+                                </button>
+                            </td>
+                            <td data-th="">
+                                <button class="btn btn-secondary">
+                                    刪除
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>       
         </div>
     </div>
     

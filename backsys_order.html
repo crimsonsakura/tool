@@ -24,43 +24,64 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-
+    
             </ul>
             <ul class="form-inline my-2 my-lg-0" style="list-style:none;">
-                <li class="nav-item"><a href="backorder".html" class="dropdown-item">訂單管理</a></li>
+                <li class="nav-item"><a href="backorder" .html" class="dropdown-item">訂單管理</a></li>
                 <li class="nav-item">
                     <a class="dropdown-item" href="backuser.html">使用者管理</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="box drop-shadow p-3 pb-5 mb-5 mt-9 bg-Secondary rounded col-md-5 col-sm-12">
-                <form class=" pt-3 pr-3 pl-3">
-                    <div class="form-group drop-shadow">
-                        <label for="exampleInputEmail1">帳號：
-                        </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="請輸入您的email">
-                        <small id="emailHelp" class="form-text text-muted"></small>
-                    </div>
-                    <div class="form-group drop-shadow">
-                        <label for="exampleInputPassword1">密碼：</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入您的密碼">
-                    </div>
-                    <br>
-                    <div class="text-center">
-                        <a class="btn btn-primary mx-auto  drop-shadow" href="success.html">登入</a>
-                    </div>
-                        
-                </form>
+    <div class="container mt-9">
+        <div class="row">
+            <div class="input-group ">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button shadow" placeholder="請輸入關鍵字">
+                <a class="btn btn-outline-primary btn-primary shadow" type="submit" href="#">搜尋</a>
             </div>
         </div>
+        <div class="row align-items-center mt-5 justify-content-center mx-auto">
+            <form action="" method="post">
+                <table class="rwd-table table-hover table table-striped table-bordered table-sm">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>商品編號：</th>
+                            <th>品名：</th>
+                            <th>上架時間：</th>
+                            <th>上架者ID：</th>
+                            <th>上架者：</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="商品編號：">123123123</td>
+                            <td data-th="品名：">木製工具台</td>
+                            <td data-th="上架時間：">3000-1-1</td>
+                            <td data-th="上架者ID：">12312131</td>
+                            <td data-th="上架者：">大名</td>
+                            <td data-th="" class="text-cnter">
+                                <button class="btn btn-secondary">
+                                    修改
+                                </button>
+                            </td>
+                            <td data-th="">
+                                <button class="btn btn-secondary">
+                                    刪除
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
     </div>
+        
     
     
     <!-- footer -->
